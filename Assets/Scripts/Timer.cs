@@ -8,38 +8,39 @@ public class Timer : MonoBehaviour
 {
     public Slider timerSlider;
     public float gameTime;
-
     private bool stopTimer;
+    public Text gameOver;
+   
 
-
-        private void Start()
+    private void Start()
     {
-        stopTimer = false;
-        timerSlider.maxValue = gameTime;
-        timerSlider.value = gameTime;
+        gameOver.fontSize = 200;
+        timerSlider.value = 100;
 
-
+        InvokeRepeating("IncramentTimer", 0, 0.005f);
+    }
+    private void IncramentTimer()
+    {
+        timerSlider.value = timerSlider.value - 0.15f;
 
 
     }
 
     private void Update()
     {
-        float time = gameTime - Time.time;
+ 
 
-        int minutes = Mathf.FloorToInt(time / 60);
-        int seconds = Mathf.FloorToInt(time - minutes * 60f);
-
-
-        if (time <= 0)
+        if (timerSlider.value <= 0)
         {
             stopTimer = true;
-        }
-        if (stopTimer == false)
-        {
 
-            timerSlider.value = time;
+            gameOver.fontSize = gameOver.fontSize = 36;
+
+           
         }
+       
+        
+
     }
 
     
