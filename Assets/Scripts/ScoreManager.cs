@@ -3,17 +3,38 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class scoremanager : MonoBehaviour
+public class Scoremanager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] Text pointText;
+
+    int points = 0;
+
+    private void Awake()
     {
-        
+        UpdateHUD();   
+    }
+    public int Points
+    {
+
+        get
+        {
+            return points;
+
+        }
+
+        set
+        {
+            points = value;
+            UpdateHUD();
+
+
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void UpdateHUD()
     {
-        
+        pointText.text = points.ToString();
+
     }
 }
+

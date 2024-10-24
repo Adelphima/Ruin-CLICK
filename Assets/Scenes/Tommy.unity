@@ -364,8 +364,8 @@ GameObject:
   m_Component:
   - component: {fileID: 529066359}
   - component: {fileID: 529066358}
-  - component: {fileID: 529066360}
   - component: {fileID: 529066361}
+  - component: {fileID: 529066360}
   m_Layer: 0
   m_Name: Game Console
   m_TagString: Untagged
@@ -412,7 +412,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 529066357}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5aa452be53587f04aa08d84b60e3a227, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e650f38328b59a499ac5a5264dc35a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pointText: {fileID: 612096371}
@@ -463,8 +463,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -69.3, y: 62.8}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 297.32016, y: 154.59764}
+  m_SizeDelta: {x: 144.1597, y: 27.2047}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &612096371
 MonoBehaviour:

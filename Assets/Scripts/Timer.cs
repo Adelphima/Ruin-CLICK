@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -28,7 +29,13 @@ public class Timer : MonoBehaviour
 
     }
        
+    public void addTime()
+    {
 
+        timerSlider.value = timerSlider.value + 5;
+
+
+    }
 
     private void Update()
     {
@@ -44,7 +51,7 @@ public class Timer : MonoBehaviour
            
         }
 
-        
+       
        
         
 
