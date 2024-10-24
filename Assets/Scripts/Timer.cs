@@ -9,11 +9,12 @@ public class Timer : MonoBehaviour
     public Slider timerSlider;
     public float gameTime;
     private bool stopTimer;
+    public Text gameOver;
    
 
     private void Start()
     {
-       
+        gameOver.fontSize = 200;
         timerSlider.value = 100;
 
         InvokeRepeating("IncramentTimer", 0, 0.005f);
@@ -33,10 +34,12 @@ public class Timer : MonoBehaviour
         {
             stopTimer = true;
 
-           
+            gameOver.fontSize = gameOver.fontSize = 36;
 
+           
         }
        
+        
 
     }
 
