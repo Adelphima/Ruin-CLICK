@@ -1711,7 +1711,7 @@ GameObject:
   - component: {fileID: 1660932540}
   - component: {fileID: 1660932539}
   m_Layer: 5
-  m_Name: Options
+  m_Name: Collectibles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
