@@ -1,7 +1,9 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
@@ -10,6 +12,7 @@ public class Timer : MonoBehaviour
     public float gameTime;
     private bool stopTimer;
     public Text gameOver;
+
    
 
     private void Start()
@@ -25,10 +28,19 @@ public class Timer : MonoBehaviour
 
 
     }
+       
+    public void addTime()
+    {
+
+        timerSlider.value = timerSlider.value + 5;
+
+
+    }
 
     private void Update()
     {
- 
+
+
 
         if (timerSlider.value <= 0)
         {
@@ -38,6 +50,8 @@ public class Timer : MonoBehaviour
 
            
         }
+
+       
        
         
 
