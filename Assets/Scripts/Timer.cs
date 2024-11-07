@@ -31,7 +31,7 @@ public class Timer : MonoBehaviour
        
     public void addTime()
     {
-
+        
         timerSlider.value = timerSlider.value + 50f;
 
 
